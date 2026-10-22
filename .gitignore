@@ -1,0 +1,47 @@
+# ── Environnement virtuel ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── Données brutes et volumineuses (ne pas publier sur GitHub) ────────────────
+data/raw/
+data/processed/
+
+# ── Modèles sauvegardés ───────────────────────────────────────────────────────
+models/*.pkl
+models/*.joblib
+
+# ── MLflow ────────────────────────────────────────────────────────────────────
+mlruns/
+mlartifacts/
+
+# ── Secrets et credentials ────────────────────────────────────────────────────
+.env
+*.env
+kaggle.json
+secrets/
+
+# ── Python caches ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# ── Jupyter checkpoints ───────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── OS et éditeurs ────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/settings.json
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Distribution Python ───────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
