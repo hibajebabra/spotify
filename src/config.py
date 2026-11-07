@@ -76,14 +76,19 @@ for _dir in [RAW_DATA_DIR, PROC_DATA_DIR, MODELS_DIR, FIGURES_DIR]:
 
 
 if __name__ == "__main__":
+    import sys
+    # Forcer l'encodage UTF-8 sur Windows pour afficher les accents correctement
+    if sys.stdout.encoding != "utf-8":
+        sys.stdout.reconfigure(encoding="utf-8")
+
     # Test rapide : affiche tous les chemins configurés
     print("=== Configuration du projet ===")
     print(f"Racine          : {ROOT_DIR}")
-    print(f"Données brutes  : {RAW_DATA_DIR}")
-    print(f"Données traitées: {PROC_DATA_DIR}")
-    print(f"Modèles         : {MODELS_DIR}")
+    print(f"Donnees brutes  : {RAW_DATA_DIR}")
+    print(f"Donnees traitees: {PROC_DATA_DIR}")
+    print(f"Modeles         : {MODELS_DIR}")
     print(f"Rapports        : {REPORTS_DIR}")
     print(f"CSV brut        : {RAW_CSV_PATH}")
     print(f"Parquet propre  : {PROCESSED_PARQUET}")
-    print(f"Caractéristiques: {AUDIO_FEATURES}")
-    print("\n✅ Configuration chargée correctement.")
+    print(f"Caracteristiques: {AUDIO_FEATURES}")
+    print("\n[OK] Configuration chargee correctement.")

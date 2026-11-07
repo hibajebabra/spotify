@@ -2,22 +2,22 @@
 pandas>=2.1
 numpy>=1.26
 pyarrow>=14.0          # Lecture/écriture Parquet
+scipy>=1.12            # stats (Z-score, etc.)
 
 # ── Machine Learning ──────────────────────────────────────────────────────────
 scikit-learn>=1.4
-scipy>=1.12
 joblib>=1.3            # Sauvegarde des modèles
 
 # ── Visualisation ─────────────────────────────────────────────────────────────
 matplotlib>=3.8
 seaborn>=0.13
+plotly>=5.18           # Graphiques interactifs pour Streamlit
 
 # ── Suivi des expériences ─────────────────────────────────────────────────────
 mlflow>=2.10
 
 # ── Dashboard ─────────────────────────────────────────────────────────────────
 streamlit>=1.30
-plotly>=5.18           # Graphiques interactifs pour Streamlit
 
 # ── Notebooks ─────────────────────────────────────────────────────────────────
 ipykernel>=6.0
